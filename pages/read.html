@@ -19,16 +19,18 @@
             <div class="dream" v-for='dream in dreams' :key="dream.date">
               <p>
               <h2>{{ dream.title }}:</h2>
-                {{dream.date}}
+                Date: {{ dream.date }}
+                <br>
+                Type: {{ dream.type}}
               </p>
-              <p> <h3>{{dream.content}}</h3> </p>
+              <p> <h3>{{ dream.content }}</h3> </p>
 
             </div>
           </div>
         </div>
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="./js/vue.js"></script>
     <script src="./js/read.js" charset="utf-8"></script>
   </body>
 </html>

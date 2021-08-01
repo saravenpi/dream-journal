@@ -20,13 +20,13 @@
           <form @submit.prevent="addDream">
 
               <h3>Dream Title: </h3>
-              <input id="title" v-model="title" name="title" placeholder="dream's title">
+              <input id="title" v-model="title" name="title" placeholder="The magic castle">
               <br/>
               <h3>Dream Type: </h3>
-              <input id="type" v-model="type" name="type" placeholder="dream's type">
+              <input id="type" v-model="type" name="type" placeholder="lucid dream">
               <br/>
               <h3>Dream Content: </h3>
-              <input id="content" v-model="content" name="content" placeholder="dream's content">
+              <textarea id="content" v-model="content" name="content" placeholder="What did you dream about ?"></textarea>
               <br/>
               <br/>
               <input type="submit" name="submit" value="Add">
@@ -35,7 +35,7 @@
       </div>
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="./js/vue.js"></script>
     <script src="./js/add.js" charset="utf-8"></script>
 
   </body>
