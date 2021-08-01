@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Read your dreams</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <ul>
+        <li><a href="./index.html" > Home </a></li>
+        <li><a href="./read.html" class="active"> Read </a></li>
+        <li><a href="./add.html"> Add </a></li>
+        <li><a href="./about.html"> About </a></li>
+      </ul>
+        <div class="content">
+          <h1>Here you can read your dreams !</h1>
+          <div class='dreams'>
+            <div class="dream" v-for='dream in dreams' :key="dream.date">
+              <p>
+              <h2>{{ dream.title }}:</h2>
+                {{dream.date}}
+              </p>
+              <p> <h3>{{dream.content}}</h3> </p>
+
+            </div>
+          </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="./js/read.js" charset="utf-8"></script>
+  </body>
+</html>

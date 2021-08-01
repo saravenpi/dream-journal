@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Add a dream</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <ul>
+        <li><a href="./index.html" > Home </a></li>
+        <li><a href="./read.html"> Read </a></li>
+        <li><a href="./add.html" class="active"> Add </a></li>
+        <li><a href="./about.html"> About </a></li>
+      </ul>
+
+      <div class="content">
+        <h1>Here you can add some new dreams !</h1>
+
+          <form @submit.prevent="addDream">
+
+              <h3>Dream Title: </h3>
+              <input id="title" v-model="title" name="title" placeholder="dream's title">
+              <br/>
+              <h3>Dream Type: </h3>
+              <input id="type" v-model="type" name="type" placeholder="dream's type">
+              <br/>
+              <h3>Dream Content: </h3>
+              <input id="content" v-model="content" name="content" placeholder="dream's content">
+              <br/>
+              <br/>
+              <input type="submit" name="submit" value="Add">
+          </form>
+
+      </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="./js/add.js" charset="utf-8"></script>
+
+  </body>
+</html>
